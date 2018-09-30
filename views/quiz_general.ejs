@@ -1,0 +1,96 @@
+<%- include includes/navbar.ejs %>
+    
+    <br><br>
+    <div class="container" ng-app="quizApp" >
+        <div ng-controller="quizController">
+        <div class="jumbotron" id="quiz-message">
+            <center>
+                <h1>SUBMIT TO GET RESULTS</h1>
+                <center>
+                    <h2>18/20 ATTEMPTED</h2>
+                    <button class="btn btn-warning">SUBMIT THE QUIZ</button>
+                </center>
+
+            </center>
+        </div>
+        <div class="jumbotron" id="quiz_rules">
+            <center>
+                <h1>QUIZ ON COURSE NAME</h1>
+                <h3>20 QUESTIONS</h3>
+                <p>100 points</p>
+                <button data-toggle="collapse" data-target="#demo" class=" btn btn-primary">READ THE RULES</button>
+                <span class="btn btn-success" ng-click="startQuiz();">START THE QUIZ</span>
+                <div id="demo" class="collapse">
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio tenetur quod cupiditate id et dolor beatae libero laborum! Tenetur dignissimos exercitationem possimus incidunt! Expedita hic, totam iste architecto culpa.</p>
+                </div>
+
+            </center>
+        </div>
+        <div class="panel panel-primary" id="quiz-body">
+            <div class="panel-heading"><h3>COURSE NAME</h3></div>
+            <div class="panel-body" id='questionBody' >
+                <ul class="list-group">
+                <div class="well"><strong>QUESTION : </strong><br><p id="question"> {{ questionArray[questionNumber].q }} </p></div>
+                    <li class="list-group-item">
+                        <div class="radio">
+                            <label><input type="radio" value="1" name="option"> {{ questionArray[questionNumber].a }}</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="radio">
+                            <label><input type="radio" value="2" name="option"> {{ questionArray[questionNumber].b }}</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="radio">
+                            <label><input type="radio" value="3" name="option">  {{ questionArray[questionNumber].c }}</label>
+                         
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="radio">
+                            <label><input type="radio" value="4" name="option"> {{ questionArray[questionNumber].d }}</label>
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <div><span ng-if="skippedQuestionDisplay()" > Skipped Questions:  <span ng-repeat='skippedQuestion in skippedQuestions track by $index' ng-value="skippedQuestion" ng-click='skippedQuestionManage(skippedQuestion)' > <a href="" class="skipped-questions" ng-class="{ testSkippedQuestion : (skippedQuestion==null)}"> {{ skippedQuestion }} </a>  </span> </span></div>
+                <br>
+                <button class="btn btn-primary" ng-disabled="!(questionNumber>=1)" ng-click = "previousEvaluation()" >Previous</button>
+                <button class="btn btn-primary" ng-click = "evaluation()" ng-disabled="checkQuestions()">NEXT</button>
+                <hr>
+                <button class="" ng-click = "submitAnswers()" ng-class="{btn : (6>1) , 'btn-primary': (submit_message=='END QUIZ') , 'btn-success' : (submit_message=='SUBMIT') }" >{{submit_message}}</button>
+            </div>
+
+            <div class="jumbotron" id="quizScore" style= "display:none">
+                <center>
+                    <h3>YOUR SCORE   {{ "             "+score}}</h3>
+                    <h3>Questions Attempted   {{ attemptedQuestions }}</h3>
+                    <h3> Accuracy  {{ accuracy }} %</h3>
+                  
+                    <div id="donutchart" style=" height: 500px;"></div>
+    
+                </center>
+            </div>
+
+
+
+
+
+
+            <div class="panel-footer">
+                &copy; ALL RIGTHTS RESERVED
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+<%- include includes/footer.ejs %>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <style type="text/css">
+  body, html {
+    height: 100%;
+    /*background-image: url("E:\\CODE IT\\DESIGN\\introductionfinal.jpg");*/
+    background: rgba(0,0,0,0.9);
+    font-family: 'Dosis', sans-serif;
+}
+
+    .bg {
+    background-image: url("check6.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+/*  background: yellow;*/
+/*  opacity: 0.8;*/
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  
+}
+section.ok{
+  background-image: url("./introduction.jpg"); 
+  height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+.button {
+  border-radius: 50px;
+  background-color: inherit;
+  border: 2px solid #04f5ff;
+  color: #04f5ff;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-animation: bounce 10s infinite 10s;
+  animation: bounce 10s infinite 2s;
+  letter-spacing: 4px;    
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.introduction{
+  color:white; 
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  font-size: 50px;
+  font-family: 'Ubuntu: ;', sans-serif;
+}
+
+.introduction-data{
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+  font-size: 1.5em;
+  color: white;
+}
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  box-shadow: 2px 2px 4px black;
+  position: absolute;
+  bottom: 8%;
+  left: 90%;
+  margin-left: -16px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #04f5ff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 13px);
+    left: calc(50% - 10px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    border: 2px solid #04f5ff;
+    opacity: 1;
+    border-width: 0px 0 2px 2px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+.whatwedo{
+  padding: 10px;
+  color: white;
+  background-color: rgba(20,20,20,0.7);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.whatwedolist{
+  padding: 70px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.whatwedo1{
+  padding: 30px;
+  color: white;
+ 
+}
+
+.whatwedolist1{
+  padding: 50px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.bookstext{
+  padding-top: 5%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.contactus{
+  content: "";
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: 10% 0% 50% 10%;
+  background: yellow;
+  opacity: 0.83;
+}
+.contact{
+  font-size: 5em;
+  color: black;
+}
+
+.introduction1{
+  background-color: rgba(10,10,10,0.4);
+}
+
+.introduction-head{
+  margin-top: 5%;
+  height: 50%;
+  color: white;
+}
+.introduction-body{
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.footer{
+    color: white;
+}
+
+.footer-data{
+    text-align: center;
+    letter-spacing: 4px;
+}
+      
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /*margin:  10px;*/
+    border-radius: 50%;
+    background-color: inherit;
+    
+    border: 1px solid #fff;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.8;
+    color: #04f5ff;
+    border-color: #04f5ff;
+    box-shadow: 2px 2px 5px black;
+}
+@media screen and (max-width: 500px) {
+    .centered{
+         top: 10%;
+         left: 10%;
+    }
+  .button {
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+}
+.bg:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: 0% 0% 500% 0%;
+  background: yellow;
+  opacity: 0.83;
+}
+.introduction{
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.introduction-data{
+  width: 80%;
+  font-size: 1.5em;
+}
+  .scroll-down {
+  bottom: 25%;
+  left: 80%;
+  width: 60px;
+  height: 60px;
+}
+.bookstext{
+  text-align:justify;
+  font-size: 13px;
+}
+
+}
+
+
+
+
+
+  </style>
+  </head>
+  <body>
+  	<div class="bg img-responsive">
+    <div class="centered">
+           <%if(error=="404"){%>
+              <script type="text/javascript">
+               swal("LOGIN ERROR!", "Email Password combination does not exist", "error");
+              </script>
+           <%}%>
+           <%if(error=="500"){%>
+              <script type="text/javascript">
+               swal("SIGNUP ERROR!", "Username already exists", "info");
+              </script>
+           <%}%>
+           <%if(error=="200"){%>
+              <script type="text/javascript">
+               swal("SIGNUP SUCCESS!", "Account Created successfully", "success");
+              </script>
+           <%}%>
+            <button class="button" data-toggle="modal" data-target="#signup"><span>Sign-Up</span></button><br><br><br>
+            <button class="button" data-toggle="modal" data-target="#login"><span>Login</span></button><br><br><br> 
+
+
+<!-- Modal -->
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form action="../login" method="post" onsubmit="return loginValidate()">
+  <div class="alert alert-danger" style="display:none;" id="errors">
+      Email-Id or Password Empty
+  </div>
+   <div class="form-group">
+    <label for="email1">Email Address:</label>
+    <input type="email" class="form-control" id="email1" name="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd1">Password:</label>
+    <input type="password" class="form-control" id="pwd1" name="password">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+           
+           
+           
+           
+           
+           
+           
+           
+           <div id="signup" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">SIGNUP</h4>
+      </div>
+      <div class="modal-body">
+        
+        
+        <form class="form-horizontal" action="../signup" method="post" onsubmit="return signupValidate()">
+        <div class="alert alert-danger" style="display:none;" id="errors1">
+          <p>Error submitting form</p>
+          Possible Errors
+          <ul>
+              <li>Password do not match</li>
+              <li>Phone number not of ten digits</li>
+          </ul>
+        </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">NAME :</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="phn">PHONE NUMBER:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="phn" placeholder="Enter Phone Number" name="phn" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="username">USERNAME:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">EMAIL:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="password">PASSWORD:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="repwd">RE-ENTER PASSWORD:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="repwd" placeholder="Re-Enter Password" name="repwd" required>
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="description">SHORT DESCRIPTION:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="description" placeholder="Enter One Liner Description" name="description" required>
+    </div>
+  </div>
+  
+<!--
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="profileImage">Upload Profile Picture:</label>
+    <div class="col-sm-10">
+      <input type="file" class="form-control" id="profileImage" placeholder="Re-Enter Password" name="profileImage">
+    </div>
+  </div>
+-->
+  
+  
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+        
+        
+        
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            
+            
+                   
+    </div>
+    </div>
+    <a href="#" class="scroll-down" address="true"></a>
+    <section class="ok">
+    <p class="introduction">INTRODUCTION</p>
+    <p class="introduction-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      
+        <br><br><br><br><br>
+
+
+    <div class="container-fluid">
+    <div class="row whatwedo">
+      
+      <div class="col-sm-3">
+        <div class="col-sm-12 whatwedolist">wewe</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="col-sm-12 whatwedolist">ewew</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="col-sm-12 whatwedolist">ewew</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="col-sm-12 whatwedolist">weew</div>
+      </div>
+    </div>
+    </div>
+    
+    <br><br><br><br>
+
+    <div class="container introduction1">
+    <h1 class="introduction-head">ABOUT US</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="col-sm-12">
+                <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="" class="img-responsive" style="border-radius: 4px;">
+                <br>
+            </div>
+            <div class="col-sm-12">
+                <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="" class="img-responsive" style="border-radius: 4px;">
+                <br>
+            </div>
+            <div class="col-sm-12">
+                <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="" class="img-responsive" style="border-radius: 4px;">
+                <br>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="col-sm-12 introduction-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam minima hic, nulla possimus quos corporis molestias cupiditate corrupti tempore! Minus consectetur ipsa, quod explicabo. Ipsa natus laborum odit, culpa numquam.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <div class="row footer">
+        <div class="col-sm-8 footer-data">
+            <h1>FIND US AT</h1>
+            <p>L BLOCK - NETAJI SHUBASH CHANDRA BOSE BLOCK</p>
+            <p>MOBILE : 9848576324</p>
+            <p>EMAIL  : codeit2218@gmail.com</p>
+            <hr>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+            <div style="text-align: center;">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+            </div>
+            <hr>
+            <h9><center><strong>CODE TO LEARN</strong> &lt; <kbd>LEARN TO CODE</kbd> &gt;</center></h9>
+        </div>
+        <div class="col-sm-4">
+            <h1>CONTACT US</h1>
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="email2">NAME</label>
+                    <input type="email" class="form-control" id="email2">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">MESSAGE</label>
+                    <textarea type="password" class="form-control" id="pwd" rows="8"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="border-radius: 10px; background-color: inherit; color: #04f5ff; border: 2px solid #04f5ff; letter-spacing: 4px;">SEND US MAIL</button>
+            </form>
+        </div>
+        <div class="col-sm-12" style="border-radius:0%;padding: 4px; background-color: rgba(250,250,250,0.8); margin-top: 15px; color: rgba(0,0,0,0.9);"><h3><center>&copy; ALL RIGHTS RESERVED</center></h3></div>
+    </div>
+</div>
+
+    
+  </body>
+  <script src="scripts/index.js"></script>
+  <script type="text/javascript">
+$(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
+</script>

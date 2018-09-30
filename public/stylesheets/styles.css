@@ -1,0 +1,391 @@
+/*navbar styles*/
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    background-color: rgba(200,200,200,0.9);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    padding: 10% 8px 10% 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+    #main{
+        transition: margin-left 0.5s;
+    }
+    #sub-heading{
+        background-color: rgba(255,255,255,0.6);
+        padding: 10px 10px 40px 10px;
+    }
+
+    #main-heading{
+        background-color: rgba(0,0,0,0.9);
+        color: rgb(250,250,250,0.9);
+        box-shadow: 0px 6px 6px black;
+        margin: 0px;
+        padding: 10px;
+        transition: margin-left 0.5s;
+    }
+
+#display-image{
+    max-width: 80px;
+    text-align: center;
+    display: block;
+    padding: 8px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#username{
+    text-align: center;
+    display: block;
+    padding: 8px;
+    margin: auto;
+}
+
+#username a{
+    padding: 4px;
+}
+
+#username a:hover{
+    background-color: transparent;
+    color: blue;
+    padding: 4px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*dashboard styles*/
+
+#dashboard-top-pane{
+    padding: 10px;
+}
+
+#myCoursesList{
+    height: 300px;
+    background-color: rgba(255,255,255,0.9);
+    margin: 10px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+#myPoints{
+    height: 300px;
+    background-color: rgba(255,255,255,0.9);
+    margin: 10px;
+    border-radius: 6px;
+    overflow: auto;
+    text-align: center;
+}
+
+#myPoints h2{
+    text-align: left;
+}
+
+#points{
+    font-size: 80px;
+    box-shadow: 2px 2px 10px black;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-radius: 50%;
+    background-color: rgba(150,150,50,0.1);
+}
+
+.pointContainer{
+    text-align: center;
+    padding: 10%;
+}
+
+#dashboard-bottom-pane{
+    padding: 10px;
+}
+
+#myProfile{
+    height: 300px;
+    background-color: rgba(255,255,255,0.9);
+    margin: 10px;
+    padding: 8px;;
+    border-radius: 6px;
+    overflow: auto;
+    text-align: center;
+}
+
+.image{
+    background-color: black;
+    margin: 0px;
+}
+
+#myProfile img{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-radius: 40%;
+    margin-top: 0%;
+    background-color: black;
+}
+
+#myProfile div{
+    text-align: center;
+    font-size: 1em;
+}
+
+#myProfile #info{
+    background-color: steelblue;
+    padding: 0.5% 3%;
+    border-radius: 40%;
+    color: white;
+    width: 30%;
+    margin: auto;
+}
+
+.userInfo{
+    background-color: #dafd00;
+    color: black;
+}
+#myActivity{
+    height: 300px;
+    background-color: rgba(255,255,255,0.9);
+    margin: 10px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+#coursesCompleted{
+    height: 200px;
+/*    overflow: auto;*/
+}
+
+#coursesCompleted ul{
+    height: 150px;
+    overflow: auto;
+}
+
+#coursesCompleted ul li{
+    padding: 4px;
+    margin: 4px;
+    font-family: cursive;
+    border-radius: 4px;
+    list-style: none;
+    background-color: rgba(10,10,10,0.2);
+}
+
+#number{
+    width: 50%;
+    box-shadow: 4px 4px 10px black;
+    text-align: center;
+    margin: auto;
+    font-size: 8em;
+/*    background-color: rgba(0,0,0,0.9);*/
+    color(250,250,250,0.9);
+    border: 4px solid rgba(0,0,0,0.9);
+    border-radius: 10px;
+}
+
+hr{
+    box-shadow: 2px 2px 2px black;
+}
+
+/*courses page*/
+
+.courseImage{
+    max-width: 100%;
+    border-radius: 2%;
+    margin: 4px;
+}
+
+.courseDetails{
+    box-shadow: 2px 2px 10px black;
+    background-color: rgba(255,255,255,0.8);
+    padding: 4px;
+    padding-left: 0px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.courseSummary{
+    overflow: auto;
+    padding: 10px;
+}
+
+/*quick-notes styles*/
+
+.titleForCourse{
+    padding: 10%;
+    margin: 10%;
+    text-align: center;
+    font-size-adjust: auto;
+}
+
+.titleForCourse a{
+    padding: 10px;
+    font-size-adjust: auto;
+    box-shadow: 2px 2px 10px black;
+}
+
+.lessonList{
+    position: sticky;
+    overflow: auto;
+    background-color: black;
+}
+
+.quickNotes{
+    overflow: auto;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 2%;
+    margin: 6px;
+    min-height: 500px;
+    max-height: 500px;
+    color: black;
+    font-size-adjust: auto;
+    text-align: justify;
+}
+
+/*course_template*/
+
+.course_main_body{
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(255,255,255,0.9);
+}
+
+#message{
+    display: none;
+}
+
+.course_content_text{
+    border-left: 10px solid #04f5ff;
+    padding: 8px 8px 8px 16px;
+    background-color: rgba(100,100,10,0.2);
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #04f5ff;
+    color: black;
+    border-color: #04f5ff;
+}
+
+#quiz-body{
+    display: none;
+}
+
+#quiz-message{
+    display: none;
+}
+
+.skipped-questions{
+    margin: 4px;
+    background-color: #dafd00;
+    color: black;
+    padding: 4px 6px;
+    text-align: center;
+    border: 1px solid black;
+}
+.testSkippedQuestion
+{
+    display : none;
+}
+
+.skipped-questions:hover{
+    box-shadow: 2px 2px 6px black;
+}
+
+.course-complete-structure{
+    width: 90%;
+    margin: auto;
+}
+
+.video-container{
+    height: 500px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.iframe{
+    height: 500px;
+    width: 100%;
+}
+
+.playlist-item{
+    height: 100px;
+    margin: 5px 0px;
+/*    background-color: rgba(0,0,0,0.9);*/
+/*    border: 2px solid rgba(0,0,0,0.9);*/
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.playlist-item:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.playlist-container{
+    height: 500px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 500px) {
+    #message{
+        display: block;
+    }
+    
+    .course-complete-structure{
+    width: 100%;
+    margin: auto;
+}
+    .iframe{
+    height: 200px;
+    width: 100%;
+}
+    
+    .playlist-container{
+    height: 150px;
+    overflow: auto;
+}
+    
+    .playlist-item{
+        float: left;
+        width: 300px;
+    }
+}

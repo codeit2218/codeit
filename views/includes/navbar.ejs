@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<script type="text/javascript" src="scripts/angular.min.js" ></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="scripts/angularwork.js"></script>
+
+</head>
+<body>
+<div ng-app='quizApp'>
+    <div ng-controller='userController'>
+    <div id="mySidenav" class="sidenav" >
+  <br>
+  <img src= '{{ imgpath }}' alt="" class="img-responsive" id="display-image">
+  <span id="username"><a href="#">{{uid}}</a></span>
+  <hr>
+  <a href="dashboard">DASHBOARD</a>
+  <a href="courses">COURSES</a>
+  <a href="#">REFERENCES</a>
+  <a href="quickNotes">QUICK NOTES</a>
+</div>
+
+<div id="main">
+    <div id="main-heading">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; CODE IT <span class="glyphicon glyphicon-knight"></span></span>
+    </div>
+    <div id="sub-heading" style="position:relative" >
+        <span><a href="../logout" class="btn btn-danger pull-right">logout</a></span>
+        <br>
+        <br>
+        <span> <button class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal" >change profile picture</button>  </span>
+
+       
+       
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Change Profile Picture</h4>
+      </div>
+      <div class="modal-body">
+        <div style='text-align:center'>
+            Hello you are here in change profile picture tab
+<ol>
+    <li>Photo should be less than 2mb</li>
+    <li>Photo format should be jpeg</li>
+</ol>
+<br>
+<form action="/photoValidation" method="post" enctype="multipart/form-data" name='picform'>
+    <input type="file" name="avatar" class="form-control" required/>
+    <br>
+    <input  type='submit' class="btn btn-primary" value='Submit' id='submitter'>
+  </form>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+       
+       
+       
+        <h3>PAGE HEADING</h3>
+    </div>
+    <div id="content">
+        </div>
+        </div>
+        </div>
+        </div>
+
