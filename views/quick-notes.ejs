@@ -1,7 +1,47 @@
 <%- include includes/navbar.ejs %>
+
+<style>
+#JAVA {color: #fff; background-color: #1E88E5;margin-top:150px;}
+  #PYTHON {color: #fff; background-color: #673ab7;margin-top:150px;}
+  #C++ {color: #fff; background-color: #ff9800;margin-top:150px;}
+  #C {color: #fff; background-color: #00bcd4;margin-top:150px;}
+
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4 lessonList">
+            <div class="col-sm-4 lessonList" id="myScrollspy">
                <h2>LESSON LIST</h2>
                <hr>
                 <div class="col-sm-3 col-xs-6">
@@ -11,31 +51,35 @@
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="col-sm-12 titleForCourse">
-                        <h2><a href="#JAVA">JAVA</a></h2>
+                        <h2><a href="#PYTHON">PY</a></h2>
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="col-sm-12 titleForCourse">
-                        <h2><a href="#JAVA">JAVA</a></h2>
+                        <h2><a href="#C++">C++</a></h2>
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="col-sm-12 titleForCourse">
-                        <h2><a href="#JAVA">JAVA</a></h2>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="col-sm-12 titleForCourse">
-                        <h2><a href="#JAVA">JAVA</a></h2>
+                        <h2><a href="#C">C</a></h2>
                     </div>
                 </div>
             </div>
             <div class="col-sm-8">
                 <div class="col-sm-12 quickNotes">
                     <h2>QUICK NOTES</h4>
-                    <span class="pull-right btn btn-primary">DOWNLOAD <span class="glyphicon glyphicon-download"></span></span>
+                    <div class="dropdown">
+  <button class="dropbtn">Download</button>
+  <div class="dropdown-content">
+     <a href="/files/java.pdf" target=_blank>JAVA</a>
+     <a href="/files/python.pdf" target=_blank>PYTHON</a>
+     <a href="/files/C++.pdf" target=_blank>C++</a>
+     <a href="/files/C.pdf" target=_blank>C</a>
+  </div>
+</div>
                     <br>
-                    <hr>
+                    <div id="JAVA">
+                    <h1>JAVA</h1>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
@@ -44,7 +88,46 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem <div id="JAVA">JAVA ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.</div>
+                    </div>
+
+
+                    <div id="PYTHON">
+                    <h1>PYTHON</h1>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    </div>
+                                        
+                    <div id="C++">
+                    <h1>C++</h1>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    </div>
+
+                                      <div id="C">
+                    <h1>C</h1>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel esse, iusto architecto qui accusamus saepe id alias! Aliquid exercitationem, nulla error? Atque eum, doloribus voluptatem sapiente quidem earum quas.
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
